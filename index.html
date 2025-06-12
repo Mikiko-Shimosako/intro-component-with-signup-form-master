@@ -37,12 +37,36 @@
         </a>
       </div>
   
-      <div class="input-group">
-        <div class="input-group-container">  
-          <input type="text" placeholder="First Name" required id="first-name" class="input">
-          <input type="text" placeholder="Last Name" required id="last-name" class="input">
-          <input type="email" placeholder="Email Address" required id="email" class="input">
-          <input type="text" placeholder="Password" required id="password" class="input">
+      <div class="input-groups">
+        <div class="input-groups-container">  
+          <div class="input-group">
+            <div class="input-wrapper">
+              <input type="text" placeholder="First Name" required id="first-name" class="input">
+              <img src="./images/icon-error.svg" alt="エラーアイコン" class="icon-error">
+            </div>
+            <p class="error-message">First Name cannot be empty</p>
+          </div>
+          <div class="input-group">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Last Name" required id="last-name" class="input">
+              <img src="./images/icon-error.svg" alt="エラーアイコン" class="icon-error">
+            </div>
+            <p class="error-message">Last Name cannot be empty</p>
+          </div>
+          <div class="input-group">
+            <div class="input-wrapper">
+              <input type="email" placeholder="Email Address" required id="email" class="input">
+              <img src="./images/icon-error.svg" alt="エラーアイコン" class="icon-error">
+            </div>
+            <p class="error-message">Looks like this is not an email</p>
+          </div>
+          <div class="input-group">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Password" required id="password" class="input">
+              <img src="./images/icon-error.svg" alt="エラーアイコン" class="icon-error">
+            </div>
+            <p class="error-message">Password cannot be empty</p>
+          </div>
       
           <button class="submit">
             Claim your free trial
@@ -54,6 +78,7 @@
       </div>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>
